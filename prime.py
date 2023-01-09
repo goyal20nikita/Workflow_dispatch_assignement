@@ -1,5 +1,6 @@
 import os
-num = os.environ["number"]
+nums = os.environ["number"]
+num = int(nums)
 flag = False
 if num == 1:
     print(num, "is not a prime number")
