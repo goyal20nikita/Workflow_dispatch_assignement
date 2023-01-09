@@ -7,7 +7,7 @@ on:
         required: true
         type: number
 env:
- num: ${{ github.event.inputs.number }}
+ number: ${{ github.event.inputs.number }}
 jobs:
   checkNumber:
     runs-on: ubuntu-latest
@@ -16,6 +16,6 @@ jobs:
     - uses: actions/setup-python@v4
       with:
        python-version: '3.10' 
-    - run: python prime.py $num
+    - run: python prime.py $number
       
 
