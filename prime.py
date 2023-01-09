@@ -1,4 +1,5 @@
-num = 29
+import os
+num = os.environ["number"]
 flag = False
 if num == 1:
     print(num, "is not a prime number")
